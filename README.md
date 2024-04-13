@@ -44,7 +44,21 @@ Many young adults unfortunately live paycheck to paycheck, they don't have a goo
 <img src="DMDD-Final-Project-ERD.png" alt="ERD" width="75%">
 
 
+## Reports
+[Debt Overview Report](Reports/DebtOverview_Report.csv) : Summarizes debt-related information for each sample user, including their total debt, average monthly payment, and debt-to-income ratio.
+
+[Financial Health Score Report](Reports/FinancialHealthScore_Report.csv) : Calculates the financial health score for each sample user based on their debt-to-income ratio and savings rate, categorizing them as Excellent, Good, Fair, or Poor.
+
+[Transaction History Report for User1 (John Doe)](Reports/TransactionHistory_Report_User1_JohnDoe_Report.csv) : Combines inflow and outflow transactions for User 1: John Doe, providing a comprehensive transaction history sorted by date including transaction type, account number, institution name, amount, and date.
+
+
 ## Visualizations
+<img src="Visualizations/Visualization_Distribution_of_Assest_Types.jpeg" alt="Distribution of Asset Types" width="75%">
+<img src="Visualizations/Visualization_Income_Distribution_Amoung_Users.jpeg" alt="Income Distribution Among Users" width="75%">
+<img src="Visualizations/Visualization_Monthly_Budget_Vs_Actual_By_Category.jpeg" alt="Monthly Budget Vs Actual By Category" width="75%">
+<img src="Visualizations/Visualization_Total_Bills_Paid_Over_Time.jpeg" alt="Total Bills Paid Over Time" width="75%">
+
+
 
 
 ## Summary
