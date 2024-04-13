@@ -43,6 +43,51 @@ Many young adults unfortunately live paycheck to paycheck, they don't have a goo
 ## Entity Relationship Diagram
 <img src="DMDD-Final-Project-ERD.png" alt="ERD" width="75%">
 
+### Database Schema
+
+#### Tables
+1. **Users**: Stores user information such as username, password (encrypted), name, email, birthdate, profession, income, and social security number (SSN).
+2. **Address**: Stores user addresses associated with their profiles.
+3. **Asset**: Tracks assets owned by users, including type, value, acquisition date, etc.
+4. **Debt**: Tracks debts owed by users, including type, payment details, interest rate, etc.
+5. **FinancialInstitutions**: Stores information about financial institutions such as banks.
+6. **Accounts**: Stores user account details associated with financial institutions.
+7. **Category**: Defines categories for budgeting and expense tracking.
+8. **Budget**: Defines user budgets for different categories within specific date ranges.
+9. **Inflow**: Tracks incoming funds or income.
+10. **Outflow**: Tracks outgoing funds or expenses.
+11. **Goals**: Allows users to set financial goals with target amounts and dates.
+12. **Bills**: Stores billing information generated from subscriptions or outstanding payments.
+13. **SubscriptionPlan**: Defines subscription plans available to users.
+14. **SubscriptionPlanUserMap**: Maps users to subscription plans they have availed.
+15. **PaymentMethod**: Stores user payment methods such as credit/debit cards.
+16. **Payments**: Records payments made by users.
+
+#### Functions
+1. **ValidateUserName**: Validates the format of usernames.
+2. **ValidatePassword**: Validates the strength of passwords.
+3. **ValidateName**: Validates common name fields like first and last names.
+4. **ValidateEmail**: Validates the format of email addresses.
+5. **ValidateSSN**: Validates the format of social security numbers.
+6. **CalculateAge**: Calculates the age based on a given birthdate.
+7. **GetTypeID**: Retrieves the type ID for a given asset/debt type.
+8. **ValidateStreetNumberOrStreetName**: Validates street number and name formats.
+9. **ValidateCityStateCountry**: Validates city, state, and country name formats.
+10. **ValidateZipCode**: Validates zip code formats.
+11. **ValidateRoutingNumber**: Validates routing number formats.
+12. **ValidateAccountNumber**: Validates account number formats.
+13. **ValidateSecurityCode**: Validates credit/debit card security code formats.
+14. **ValidateCardNumber**: Validates credit/debit card number formats.
+15. **ValidatePaymentAmount**: Validates payment amounts against outstanding bills.
+16. **ValidateDates**: Validates date ranges.
+
+#### Triggers
+1. **UpdateBillingStatus**: Updates billing status to "Paid" after a payment is made.
+2. **GenerateBillOnSubscription**: Generates bills when users avail new subscription plans.
+
+### Encryption
+- Passwords in the **Users** table are stored in encrypted form using AES symmetric key encryption.
+
 ## Views
 
 [DDL View SQL File](SQL_Code/ddl_view.sql)
