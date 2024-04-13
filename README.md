@@ -43,6 +43,30 @@ Many young adults unfortunately live paycheck to paycheck, they don't have a goo
 ## Entity Relationship Diagram
 <img src="DMDD-Final-Project-ERD.png" alt="ERD" width="75%">
 
+## Views
+
+[DDL View SQL File](SQL_Code/ddl_view.sql)
+
+1. **MonthlyBudgetPerformance**: Summarizes the budget performance for each user by comparing budgeted amounts with actual expenses on a monthly basis.
+
+2. **UserFinancialOverview**: Presents an overview of each user's financial status, including total inflows, outflows, net cash flow, total assets, total liabilities, and net worth.
+
+3. **FinancialHealthScore**: Calculates the financial health score for each user based on their debt-to-income ratio and savings rate.
+
+4. **TransactionHistory**: Combines inflow and outflow transactions for each user, providing a comprehensive transaction history.
+
+5. **Budgeting.BudgetSummary**: Summarizes the budget performance for each user by calculating the remaining amount after deducting outflows from the budgeted amount.
+
+6. **AssetAllocation**: Analyzes the asset allocation of each user by categorizing total asset values and calculating their percentage composition.
+
+7. **DebtOverview**: Provides an overview of each user's debt, including total debt, average monthly payment, and debt-to-income ratio.
+
+8. **FinancialGoalProgress**: Tracks the progress of financial goals for each user, categorizing them as completed, overdue, or in progress.
+
+9. **BudgetCategoryBreakdown**: Breaks down expenses by budget categories for each user, showing the total amount spent in each category.
+
+10. **IncomeExpenseTrendAnalysis**: Analyzes the trend of inflows and outflows for each user over time, categorized by month.
+
 
 ## Reports
 [Debt Overview Report](Reports/DebtOverview_Report.csv) : Summarizes debt-related information for each sample user, including their total debt, average monthly payment, and debt-to-income ratio.
